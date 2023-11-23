@@ -1,0 +1,330 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    background-color: rgb(8, 8, 8);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.animations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.animation {
+    text-align: center;
+    padding: 20px;
+    background-color: #252525;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 30%;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.animation:hover {
+    transform: translateY(-5px);
+}
+
+/* Animation */
+.animation1 { animation: rotate 1s infinite linear; }
+.animation2 { animation: scale 1s infinite alternate; }
+.animation3 { animation: fade 1s infinite ease-in-out; }
+.animation4 { animation: colorChange 1s infinite; }
+.animation5 { animation: slide 2s infinite; }
+.animation6 { animation: rotateScale 1.5s infinite; }
+.animation7 { animation: heartbeat 1.5s infinite; }
+.animation8 { animation: shake 0.5s infinite; }
+.animation9 { animation: spin 1.5s infinite linear; }
+.animation10 { animation: pulse 1s infinite alternate; }
+.animation11 { animation: slideRight 2s infinite; }
+.animation12 { animation: moveUp 1.5s infinite; }
+.animation13 { animation: stretch 1.5s infinite; }
+.animation14 { animation: skew 1s infinite alternate; }
+.animation15 { animation: bounce 1s infinite; }
+.animation16 { animation: rotateOpacity 1.5s infinite; }
+.animation17 { animation: swing 1s infinite alternate; }
+.animation18 { animation: pulseColor 1s infinite alternate; }
+.animation19 { animation: shakeX 0.5s infinite; }
+.animation20 { animation: flip 1s infinite; }
+
+/* animation */
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #444;
+    }
+    50% {
+        background-color: #666;
+    }
+    100% {
+        background-color: #444;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotateScale {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Ключевые кадры для анимаций с 9 по 20 */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes stretch {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(1.5);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes skew {
+    0% {
+        transform: skew(0);
+    }
+    50% {
+        transform: skew(30deg);
+    }
+    100% {
+        transform: skew(0);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotateOpacity {
+    0% {
+        transform: rotate(0) opacity(1);
+    }
+    50% {
+        transform: rotate(180deg) opacity(0);
+    }
+    100% {
+        transform: rotate(360deg) opacity(1);
+    }
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes pulseColor {
+    0% {
+        background-color: #444;
+    }
+    50% {
+        background-color: #ff5252;
+    }
+    100% {
+        background-color: #444;
+    }
+}
+
+@keyframes shakeX {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: perspective(400px) rotateY(0);
+    }
+    100% {
+        transform: perspective(400px) rotateY(360deg);
+    }
+}
